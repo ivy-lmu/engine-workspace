@@ -1,0 +1,14 @@
+{
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "java",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "shutdownAction": "stopCompose",
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    }
+  }
+}
