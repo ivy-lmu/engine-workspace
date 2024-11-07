@@ -6,6 +6,13 @@ services:
     network_mode: service:ivy
     command: sleep infinity
 
+  alpine:
+    image: mcr.microsoft.com/devcontainers/base:alpine-3.20
+    volumes:
+      - ../..:/workspaces:cached
+    network_mode: service:ivy
+    command: sleep infinity
+
   ivy:
     image: axonivy/axonivy-engine:dev
     restart: unless-stopped
