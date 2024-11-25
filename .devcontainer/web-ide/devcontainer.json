@@ -1,8 +1,8 @@
 {
-  "name": "java",
-  "dockerComposeFile": "../docker-compose.yml",
+  "name": "Web IDE",
+  "dockerComposeFile": "docker-compose.yml",
   "service": "java",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "workspaceFolder": "/workspace/${localWorkspaceFolderBasename}",
   "shutdownAction": "stopCompose",
   "forwardPorts": [8080],
   "features": {

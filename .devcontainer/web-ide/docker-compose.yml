@@ -2,14 +2,7 @@ services:
   java:
     image: mcr.microsoft.com/devcontainers/java:1-21-bullseye
     volumes:
-      - ../..:/workspaces:cached
-    network_mode: service:ivy
-    command: sleep infinity
-
-  alpine:
-    image: mcr.microsoft.com/devcontainers/base:alpine-3.20
-    volumes:
-      - ../..:/workspaces:cached
+      - ../../..:/workspace:cached
     network_mode: service:ivy
     command: sleep infinity
 
@@ -19,4 +12,4 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ../..:/workspaces:cached
+      - ../../..:/workspace:cached

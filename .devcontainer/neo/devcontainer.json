@@ -1,0 +1,8 @@
+{
+  "name": "NEO",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "alpine",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [8080]
+}

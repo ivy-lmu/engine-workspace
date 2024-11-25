@@ -1,0 +1,19 @@
+services:
+  alpine:
+    image: mcr.microsoft.com/devcontainers/base:alpine-3.20
+    volumes:
+      - ../../:/workspace
+      - ivy-data:/workspace/neo-workspaces
+    network_mode: service:ivy
+    command: sleep infinity
+
+  ivy:
+    image: axonivy/axonivy-engine:nightly-12.0
+    restart: unless-stopped
+    ports:
+      - 8080:8080
+    volumes:
+     - ivy-data:/ivy/data
+
+volumes:
+  ivy-data:

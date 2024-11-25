@@ -1,8 +1,0 @@
-{
-  "name": "alpine",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "alpine",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "shutdownAction": "stopCompose",
-  "forwardPorts": [8080]
-}
